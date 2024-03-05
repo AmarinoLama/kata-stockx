@@ -8,7 +8,7 @@ public class Sneaker implements Item{
     private int sale;
     private int ask;
     private int bid;
-    private List<Offer> offer;
+    private List<Offer> offers;
 
     public Sneaker(String style, String name) {
         this.style = style;
@@ -47,9 +47,17 @@ public class Sneaker implements Item{
         this.ask = ask;
     }
 
-    public void add(List<Offer> offer) {
-        this.offer = offer;
+    @Override
+    public void add(Offer offer) {
+        this.offers.add(offer);
     }
 
-    List<Offer> offers(){}
+    public List<Offer> offers() {
+        return this.offers;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + "\n \t \t" + this.style;
+    }
 }
