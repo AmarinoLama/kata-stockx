@@ -1,5 +1,6 @@
 package edu.badpals.stockx.Item;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sneaker implements Item{
@@ -8,7 +9,7 @@ public class Sneaker implements Item{
     private int sale;
     private int ask;
     private int bid;
-    private List<Offer> offers;
+    private List<Offer> offers = new ArrayList<Offer>();
 
     public Sneaker(String style, String name) {
         this.style = style;
