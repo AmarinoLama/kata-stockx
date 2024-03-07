@@ -1,4 +1,4 @@
-package edu.badpals.stockx.item;
+package edu.badpals.stockx.Item;
 
 import java.util.List;
 
