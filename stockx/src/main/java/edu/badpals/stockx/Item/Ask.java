@@ -1,8 +1,8 @@
 package edu.badpals.stockx.Item;
 
 public class Ask implements Offer {
-    private String size;
-    private Integer ask;
+    private String size = "";
+    private Integer ask = 0;
 
     public Ask(String size, Integer ask) {
         this.size = size;

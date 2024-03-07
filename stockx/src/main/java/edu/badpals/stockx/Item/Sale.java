@@ -2,8 +2,8 @@ package edu.badpals.stockx.Item;
 
 public class Sale implements Offer {
 
-    private String size;
-    private Integer price;
+    private String size = "";
+    private Integer price = 0;
 
     public Sale(String size, Integer price) {
         this.size = size;
