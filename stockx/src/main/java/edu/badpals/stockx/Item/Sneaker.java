@@ -33,7 +33,7 @@ public class Sneaker implements Item{
     }
 
     public int getBid() {
-        return bid;
+        return this.bid;
     }
 
     public void setBid(int bid) {
@@ -41,7 +41,7 @@ public class Sneaker implements Item{
     }
 
     public int getAsk() {
-        return ask;
+        return this.ask;
     }
 
     public void setAsk(int ask) {
